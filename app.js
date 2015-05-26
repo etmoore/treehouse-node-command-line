@@ -18,5 +18,8 @@ var req = http.get('http://teamtreehouse.com/' + username + '.json', function(re
   // Read the data
   // Parse the data
   // Print the data
+});
 
+req.on('error', function(e){
+  console.error(e.message);
 });
